@@ -1,0 +1,35 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    // CORE DATA TYPES
+
+    string text = "This is a string!"; // piece of text
+
+    char grade = 'A'; // you can put only one single character
+
+    int number = 12313; // whole number (1,2,3) NO DECİMAL, you can write negative numbers to int number = -123;
+
+    decimal money = 223123; // I recommend to use this for money or other serious stuffs
+
+    //float little_ones = 3.2; // if you write like you will get an error if you want to read about it here is the link: https://stackoverflow.com/questions/6942803/why-c-sharp-decimals-cant-be-initialized-without-the-m-suffix#6942858
+
+    double gpa = 4.2; // this is middle of the things and most developers are using double because more secure than float and you know not important than decimal so i recommend you to use double
+
+    bool isMale = true; // This is very basic just true or false but you can do amazing things with booleans
+
+    // IMPORTANT
+    // if you don't want to store this types into the variable, so... you don't need to store it guys, let me give you some examples:
+
+    Console.WriteLine("Hello"); // you don't need to store in variable
+
+    Console.WriteLine(30);
+
+    Console.WriteLine(3.32);
+
+    Console.WriteLine(true);
+
+
+    Console.ReadLine();
+  }
+}
