@@ -1,0 +1,93 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+   
+
+    // You can print any kind of number without putting into the variable(s)
+
+     Console.WriteLine (5 + 8); 
+     // Output: 13 
+     // Guys If you read my String Examples And Methods you should know this if you can say string for something it is must be between the quatation marks("String is must be between those things")
+
+     Console.WriteLine (5 * 8);
+     // Output: 40 
+     // "*" mean in coding is multiplication
+
+     Console.WriteLine (5 / 8);
+     // Outpu: i don't know asdasdad
+     // division
+
+     Console.WriteLine (10 % 3);
+     // Output: 1
+     // I know kinda different but in this mean take 10 and divide by 3 then 3*3 is 9 so we can't divide 10 to 3 and so how much if we add it is gonna be 10? yes it is 1 this is called remainder and "%" this is modules operator
+
+     Console.WriteLine (4 + 2 * 5);
+     // Output: 14
+     // Because first you need to do multiplication(or if you have only divisionyou are gonna do it first or if you have division and multiplication doesn't matter choose one multiplication or division i mean 4 % 2 * 5 in this thing you can start with 2 * 5 or 4 % 2 doesn't matter)
+
+     Console.WriteLine ((4 + 2) * 5);
+     // Output: 30
+     // Because doesn't matter first paranthesis after multiplication or division and so ((4 + 2) * 5) 6 * 5 = 30
+
+     Console.WriteLine (5.0 + 8.1);
+     //Output: 13.1
+     // I think I don't need to explain this i think you should know this :)
+     // NOT: You are gonna get decimal back
+
+     Console.WriteLine (5 + 8.1);
+     //Output: 13.1
+     // Again output is gonna be decimal again 
+
+     // NOT: if you are using decimal(s) in your calculations you are gonna get decimal back doesn't matter 5 + 8.0 you are gonna get 13.0 but after this beginner lessons we are gonna learn how to get integer if we use decimal(s).
+
+     Console.WriteLine (5 / 2);
+     // Output: 2
+     // You are gonna get 2 not 2.5 because if you divide 2 integers yu are gonna get integer back (I know kinda weird)
+
+     Console.WriteLine (5 / 2.0);
+     // Output: 2.5
+     // Now you are gonna get decimal number because we used 2.0 for dividing
+
+     int num = 6;
+     Console.WriteLine(num);
+     // Output: 6
+     // You can assign int to variable and print it out like that!
+
+     int num = 6;
+     num++; // = num = num + 1  // This gonna do add 1 to current integer in this case we have 6 so num changed and be 7 and output is gonna be 7 like that
+     Console.WriteLine(num);
+     // Output: 7
+     // Yes this is gonna change your current variable now it is 7 
+
+     int num = 6;
+     num--; // = num = num - 1 // this is gonna be 5 because we said 6 - 1 so... yeah basic math
+     Console.WriteLine(num);
+     // Output: 5
+
+     Console.WriteLine(Math.Abs(-40));
+     // Output: 40
+     // Abs means absolute value so -40 = 40 by the way we use Math. because we can acesses other math functions like this one!
+
+     Console.WriteLine(Math.Pow(3, 2));
+     // Output: 9
+     // Pow means Power so take 3 to power 2 mean = 3*3 = 9
+     // You can use this .Pow with decimal numbers to and don't forget If you are using decimal you are gonna get decimal back
+
+     Console.WriteLine(Math.Sqrt(16));
+     // Output: 4
+     // Sqrt = Square root so 16 Sqrt is 4 36 Sqrt is 6, If you know math these things should be so easy for you
+
+     Console.WriteLine(Math.Max(3,100));
+     // Output: 100
+     // This mean put 2 parameters in it and find which one is bigger one :)
+
+     Console.WriteLine(Math.Min(1,100000));
+     // Output: 1
+     // This is gonna do opposite one mean take and find which one is smaller one.
+
+     Console.WriteLine(Math.Round(4.2));
+     // Output: 4
+     // This is just basic round like if it is 4.9 round it and and answer is 5 but in this case we put 4.2 so it is 4 and guys it is like think like that 4.2 near to 4 or 5 like most of this near 4 most or 5 this is near to the 4 so output is 4 :=)
+  }
+}
