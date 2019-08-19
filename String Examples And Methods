@@ -1,0 +1,94 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+
+    // Escape Sequance
+    Console.WriteLine ("You are\nawesome");
+    // Output: 
+    //You are
+    //awesome
+
+
+    // IMPORTANT
+
+    Console.WriteLine ("You"re awesoem ");
+    /* This is not gonna work because C# When see this It Will Say "Wait 3 quetation marks? And after the "You" what's the  re awesome and BOOM ERROR!!!*/ 
+
+    // But You Can Do It With This Way
+     Console.WriteLine ("You\"re awesome"); 
+
+    // Creating Variables(Containers)
+    string Phrase = "Hello my friend :)";
+    
+    // Print Out The Value Of The Variable
+    Console.WriteLine(Phrase); // Like that, so easy!
+
+    // String-Concetenation
+    string Phrase2 = "Hello my friend :)" + " Okey see ya!";
+    // Output: Hello my friend :) Okey see ya!
+
+    // String-Length
+    string Phrase3 = "You are awesome";
+    Console.WriteLine(Phrase3.Length); // You can figure it out how many characters your variable has it
+    // Output: 15 
+    // Because in C# 1 space = 1 character so normally You are awesome 13 characters but you can see over there I wrote You (space) are (space) awesome and so I said this in first-line 1 space = 1 character so because of this output is 15!
+
+    // Methods
+
+    // Upper-case
+    string Phrase4 = "Hello BRO!";
+    Console.WriteLine(Phrase4.ToUpper()); // So in there .ToUpper() mean take this string and convert to all uppercase
+    // Output: HELLO BRO!
+    // NOT: This is not gonna change your actually variable this is just gonna change output but your variable still "Hello BRO!" and this is not gonna change your actuall variable just gonna change the  output :)
+    
+
+    // Lower-case
+    string Phrase5 = "HELLO!";
+    Console.WriteLine(Phrase5.ToLower());
+    // Output: hello!
+     // If you understand the ToUpper() actually this is the same thing too but only one difference this is gonna make your variable all lower-caps and again and again this is not gonna change your actual varibale just gonna change the output :)
+
+
+    // Contains?
+    string Phrase6 = "Yigit Eren";
+    Console.WriteLine(Phrase6.Contains("Eren"));
+    // Output: True
+    // Allright guys let's learn this! So Contains() it's like a question, first you can see i wrote .Contains("Eren"); mean look at this variable and search for is it something like "Eren"? If I have (you can see I have it) output will be True because yes i have "Eren" in my variable
+    
+    // NOT: DON'T FORGET C# IS CASE SENSITIVE SO "Eren" not gonna be equal to "eren" never forget this.
+
+    
+    // How To Find First Character In Your Variable
+    string Phrase7 = "Hello guys!";
+                    //0123456789-1
+    Console.WriteLine(Phrase7[0]); 
+    // Output: H
+    // So in there and I know if you are new to programming this is can be little confusing but just try to understand normally if you want to know which character or something you need to start with 0 because in programming if you want to get first character you should write 0 and just a quick remainder if you want to know what's the end character of your string you can just write -1 this mean last character of the string and I don't know why but if you want to get your first character but you don't want to write 0 you can just start counting from end like in "Hello guys!" s is -1 and y is -2 so H is -10 (don't forget to count space don't forget 1 space = 1 character) i know this is can be little bit confusing but just stay chill just know first character starts with 0 and end of the character starts with -1 but if you want you can just get end character with like start counting 0 and count spaces to just this guys.
+                            
+
+    // Index Of?
+    string Phrase8 = "Giraffe Academy";
+    Console.WriteLine(Phrase8.IndexOf("Academy"));
+    // output: 8
+    // This same with Contains guys and it is gonna tell check this word is it your variable and if it tell me which index is it start? in this case mine 8 because "Giraffe Academy"
+             //012345678
+    // You can see 8. index it is started :)
+
+    // if you want you can just put a single character and it is gonna be like tell me is it in the variable and if it is tell me this character first started. I mean you can see in "Giraffe" we have 2 f and if you put "f" in it is gonna tell you 4.index because first f is n the 4.index other f is 5.index but 4.index f used first so it is gonna give you 4
+
+    // if you put z in it you can see we don't have z in "Giraffe Academy" so output is gonna be -1 because we don't have z in our variable
+
+
+    // Substring
+    string Phrase9 = "Giraffe Academy";
+    Console.WriteLine(Phrase9.Substring(8));
+    // Output: Academy
+    // Basically this will allow me to grab a part of this string, we can give it only 1 parameter. Let's say you want to print "Academy" so yeah man that's easy let me show you so i wrote 8 in the paranthesis because i want to get Academy so "A" is in the index position 8 and Substring does is look for the index position 8 then take after things so output is gonna be Academy because A is 8 index so it will take 8 index then grab after words so it is gonna print "Academy"
+
+
+    // NOT: You can pass in a length too. Console.WriteLine(Phrase9.Substring(8, 3)); This mean start with 8 index then go 2 more character and give this for output (Not: in indexing second parameter doesn't count if you pass 4 it is gonna take 3 if you give 3 it is gonna take 2 something like that) and output is gonna be "Aca"
+
+  }
+
+}
